@@ -77,17 +77,18 @@ table {
 /* Table headers and data cells */
 th, td {
     border: 1px solid black;
-    padding: 8px;
 }
 
 /* header row Gray */
 th {
     background-color: lightgray;
+    padding: 3px 8px;
 }
 
 /* White Tag and Description cells */
 td {
     background-color: white;
+    padding: 8px;
 
 }
 
@@ -95,4 +96,5 @@ td {
 ol {
     list-style-type: decimal-leading-zero;
     font-size: 12px;
+
 }
