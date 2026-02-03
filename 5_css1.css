@@ -13,51 +13,30 @@ h3 {
 }
 p {
     font-family: "Times New Roman", Times, serif;
-    font-size: 13.5px;
+    font-size: 12px;
 }
 
-
-/* Apply Arial font and light blue background to entire page */
+/* Light blue background */
 body {
     background-color: lightblue;
 }
 
-/* Box the 2nd paragraph with a green border */
+/* 2nd paragraph adjustments, color box and padding/width/margin and border */
 #paragraph2 {
-    border: 4px solid green;
-    padding: 13px 35px;
-    background-color: white;
-    width: 47%;
-    margin-left: 20px;
-    margin-right: auto;
-    line-height: 2;
-}
-
-/* #paragraph2 {
     border: 4px solid green;
     padding: 15px 25px;
     background-color: white;
-    width: 47%;
-    margin-left: 0;
-    margin-right: auto;
-    line-height: 2;
+    width: 51%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: auto;
-}
-    */
-/* Add a horizontal line before every h2 that comes after a blue paragraph */
-.blue + h2::before {
-    content: "";                  /* pseudo-element must have content */
-    display: block;               /* makes it behave like a block */
-    border-top: 1px solid black;  /* the line */
-    margin: 20px 0;               /* spacing above and below the line */
-    width: 100%;                  /* full width across page */
+    line-height: 1.8;
 }
 
-
-/* Blue boxed paragraphs (4th and 5th paragraphs) */
+/* 4th and 5th adjustments, colors and boxed */
 .blue {
-    border: 2px solid blue;
+    border: 1.2px solid black;
     padding: 15px 20px;
     background-color: darkblue;
     color: white;
@@ -67,35 +46,56 @@ body {
 
 /* Table layout */
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
     margin-top: 10px;
-    width: 40%;
-    font-size: 13px;
+    width: 37%;
+    font-size: 11px;
 }
 
-/* Table headers and data cells */
+/* Table headers and data cells borders */
 th, td {
     border: 1px solid black;
 }
 
-/* header row Gray */
+/* header row lightgray */
 th {
     background-color: lightgray;
     padding: 1px 8px;
 }
 
-/* White Tag and Description cells */
+/* Contents of the cells white */
 td {
     background-color: white;
     padding: 8px;
 
 }
 
-
+/* Have leading numbers instead of 1, example 01 instead of 1*/
 ol {
     list-style-type: decimal-leading-zero;
     font-size: 12px;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
 
 }
 
+/* Item font smaller than marker */
+ol li {
+    font-size: 10px;
+}
+
+/* Font size for the marker */
+ol li::marker {
+    font-size: 12px;
+}
+
+/* Both below for link colors */
+ol li a {
+    color: darkblue;   
+}
+
+article:last-of-type section p a {
+    color: darkred;
+}
