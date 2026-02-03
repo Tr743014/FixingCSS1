@@ -1,0 +1,98 @@
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13.5px;
+}
+
+
+/* Apply Arial font and light blue background to entire page */
+body {
+    background-color: lightblue;
+}
+
+/* Box the 2nd paragraph with a green border */
+#paragraph2 {
+    border: 4px solid green;
+    padding: 13px 35px;
+    background-color: white;
+    width: 47%;
+    margin-left: 20px;
+    margin-right: auto;
+    line-height: 2;
+}
+
+/* #paragraph2 {
+    border: 4px solid green;
+    padding: 15px 25px;
+    background-color: white;
+    width: 47%;
+    margin-left: 0;
+    margin-right: auto;
+    line-height: 2;
+    margin-left: 20px;
+    margin-right: auto;
+}
+    */
+/* Add a horizontal line before every h2 that comes after a blue paragraph */
+.blue + h2::before {
+    content: "";                  /* pseudo-element must have content */
+    display: block;               /* makes it behave like a block */
+    border-top: 1px solid black;  /* the line */
+    margin: 20px 0;               /* spacing above and below the line */
+    width: 100%;                  /* full width across page */
+}
+
+
+/* Blue boxed paragraphs (4th and 5th paragraphs) */
+.blue {
+    border: 2px solid blue;
+    padding: 15px 20px;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 10px; /* ensures separate boxes */
+    line-height: 1.5;
+}
+
+/* Table layout */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 10px;
+    width: 40%;
+    font-size: 13px;
+}
+
+/* Table headers and data cells */
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* header row Gray */
+th {
+    background-color: lightgray;
+}
+
+/* White Tag and Description cells */
+td {
+    background-color: white;
+
+}
+
+
+ol {
+    list-style-type: decimal-leading-zero;
+    font-size: 12px;
+}
