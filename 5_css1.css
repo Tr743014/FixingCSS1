@@ -82,7 +82,7 @@ th, td {
 /* header row Gray */
 th {
     background-color: lightgray;
-    padding: 3px 8px;
+    padding: 1px 8px;
 }
 
 /* White Tag and Description cells */
@@ -98,3 +98,4 @@ ol {
     font-size: 12px;
 
 }
+
